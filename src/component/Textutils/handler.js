@@ -12,4 +12,4 @@ class Handler {
     setText('');
   }
 }
-module.exports = new Handler();
+export default  new Handler();

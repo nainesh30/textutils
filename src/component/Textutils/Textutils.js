@@ -1,5 +1,5 @@
 import { React, useState } from "react";
-const handler = require("./handler");
+import handler from "./handler";
 
 const Textutils = (prop) => {
   const [text, setText] = useState("");

@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+
 
 
 const Navbar = (props) => {
@@ -24,7 +24,7 @@ btncolor ='success'
     <>
     <nav  className={`navbar  bg-${props.theme}`} >
   <div className="container-fluid ">
-    <Link className="navbar-brand" to="/trial" style={{color:`${text}`}}>{props.title}</Link>
+    <a className="navbar-brand" href="/" style={{color:`${text}`}}>{props.title}</a>
 
     
     

@@ -3,9 +3,6 @@ import Navbar from "./component/Navbar/Navbar";
 import Textutils from "./component/Textutils/Textutils";
 import React, { useState } from "react";
 import Alert from "./component/Alert";
-import Trial from "./component/Trial";
-import {BrowserRouter as Router , Routes,
-Route} from "react-router-dom";
 
 function App() {
   const [mode, setMode] = useState("light");
@@ -44,7 +41,6 @@ function App() {
     console.log("DARK MODE");
   }
   return (
-    <Router>
     <>
     
       <Navbar
@@ -54,19 +50,16 @@ function App() {
       />
 
       <Alert alert={alert} />
-      <Routes>
+      
 
-      <Route  exact path="/" element={<Textutils theme={mode} fun={alertrun}  />}>
+      <Textutils theme={mode} fun={alertrun}  />
        
-    </Route>
     
-     <Route path="/trial" element={<Trial/>}>
-
-     </Route>
-      </Routes>
+    
+     
     </>
 
-      </Router>
+      
   );
 }
 
